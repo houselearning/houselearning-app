@@ -21,5 +21,45 @@ namespace houselearning_app
         {
 
         }
+
+        private void safebrowserbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void homebtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mathbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sciencebtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void codingbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playmath_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playscience_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playcoding_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

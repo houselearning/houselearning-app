@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.houselearningtopbox = new System.Windows.Forms.GroupBox();
-            this.gamesbtn = new System.Windows.Forms.Button();
+            this.safebrowserbtn = new System.Windows.Forms.Button();
             this.codingbtn = new System.Windows.Forms.Button();
             this.sciencebtn = new System.Windows.Forms.Button();
             this.mathbtn = new System.Windows.Forms.Button();
@@ -41,15 +41,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.playscience = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.playscience = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.playcoding = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.houselearningtopbox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,7 +61,7 @@
             // 
             // houselearningtopbox
             // 
-            this.houselearningtopbox.Controls.Add(this.gamesbtn);
+            this.houselearningtopbox.Controls.Add(this.safebrowserbtn);
             this.houselearningtopbox.Controls.Add(this.codingbtn);
             this.houselearningtopbox.Controls.Add(this.sciencebtn);
             this.houselearningtopbox.Controls.Add(this.mathbtn);
@@ -72,14 +72,15 @@
             this.houselearningtopbox.TabIndex = 0;
             this.houselearningtopbox.TabStop = false;
             // 
-            // gamesbtn
+            // safebrowserbtn
             // 
-            this.gamesbtn.Location = new System.Drawing.Point(570, 22);
-            this.gamesbtn.Name = "gamesbtn";
-            this.gamesbtn.Size = new System.Drawing.Size(115, 23);
-            this.gamesbtn.TabIndex = 4;
-            this.gamesbtn.Text = "Games";
-            this.gamesbtn.UseVisualStyleBackColor = true;
+            this.safebrowserbtn.Location = new System.Drawing.Point(570, 22);
+            this.safebrowserbtn.Name = "safebrowserbtn";
+            this.safebrowserbtn.Size = new System.Drawing.Size(115, 23);
+            this.safebrowserbtn.TabIndex = 4;
+            this.safebrowserbtn.Text = "SafeBrowser";
+            this.safebrowserbtn.UseVisualStyleBackColor = true;
+            this.safebrowserbtn.Click += new System.EventHandler(this.safebrowserbtn_Click);
             // 
             // codingbtn
             // 
@@ -89,6 +90,7 @@
             this.codingbtn.TabIndex = 3;
             this.codingbtn.Text = "Coding Challenges";
             this.codingbtn.UseVisualStyleBackColor = true;
+            this.codingbtn.Click += new System.EventHandler(this.codingbtn_Click);
             // 
             // sciencebtn
             // 
@@ -98,6 +100,7 @@
             this.sciencebtn.TabIndex = 2;
             this.sciencebtn.Text = "Science Fun";
             this.sciencebtn.UseVisualStyleBackColor = true;
+            this.sciencebtn.Click += new System.EventHandler(this.sciencebtn_Click);
             // 
             // mathbtn
             // 
@@ -107,6 +110,7 @@
             this.mathbtn.TabIndex = 1;
             this.mathbtn.Text = "Math Games";
             this.mathbtn.UseVisualStyleBackColor = true;
+            this.mathbtn.Click += new System.EventHandler(this.mathbtn_Click);
             // 
             // homebtn
             // 
@@ -116,6 +120,7 @@
             this.homebtn.TabIndex = 0;
             this.homebtn.Text = "Home";
             this.homebtn.UseVisualStyleBackColor = true;
+            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
             // groupBox1
             // 
@@ -137,6 +142,7 @@
             this.playmath.TabIndex = 2;
             this.playmath.Text = "Play Now";
             this.playmath.UseVisualStyleBackColor = true;
+            this.playmath.Click += new System.EventHandler(this.playmath_Click);
             // 
             // label2
             // 
@@ -180,6 +186,35 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
+            // playscience
+            // 
+            this.playscience.Location = new System.Drawing.Point(65, 275);
+            this.playscience.Name = "playscience";
+            this.playscience.Size = new System.Drawing.Size(75, 23);
+            this.playscience.TabIndex = 3;
+            this.playscience.Text = "Play Now";
+            this.playscience.UseVisualStyleBackColor = true;
+            this.playscience.Click += new System.EventHandler(this.playscience_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 233);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(159, 26);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Explore fun science experiments\r\n and learn new concepts.\r\n";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(45, 191);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Science Fun";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::houselearning_app.Properties.Resources.science_experiments;
@@ -202,43 +237,24 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             // 
-            // pictureBox3
+            // playcoding
             // 
-            this.pictureBox3.Image = global::houselearning_app.Properties.Resources.coding_challenges;
-            this.pictureBox3.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(188, 169);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.playcoding.Location = new System.Drawing.Point(68, 275);
+            this.playcoding.Name = "playcoding";
+            this.playcoding.Size = new System.Drawing.Size(75, 23);
+            this.playcoding.TabIndex = 4;
+            this.playcoding.Text = "Play Now";
+            this.playcoding.UseVisualStyleBackColor = true;
+            this.playcoding.Click += new System.EventHandler(this.playcoding_Click);
             // 
-            // label3
+            // label6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 191);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Science Fun";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 233);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 26);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Explore fun science experiments\r\n and learn new concepts.\r\n";
-            // 
-            // playscience
-            // 
-            this.playscience.Location = new System.Drawing.Point(65, 275);
-            this.playscience.Name = "playscience";
-            this.playscience.Size = new System.Drawing.Size(75, 23);
-            this.playscience.TabIndex = 3;
-            this.playscience.Text = "Play Now";
-            this.playscience.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 233);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(164, 26);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Test your programming skills with \r\ninteractive coding challenges.";
             // 
             // label5
             // 
@@ -250,23 +266,15 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Coding Challenges";
             // 
-            // label6
+            // pictureBox3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 233);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 26);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Test your programming skills with \r\ninteractive coding challenges.";
-            // 
-            // playcoding
-            // 
-            this.playcoding.Location = new System.Drawing.Point(68, 275);
-            this.playcoding.Name = "playcoding";
-            this.playcoding.Size = new System.Drawing.Size(75, 23);
-            this.playcoding.TabIndex = 4;
-            this.playcoding.Text = "Play Now";
-            this.playcoding.UseVisualStyleBackColor = true;
+            this.pictureBox3.Image = global::houselearning_app.Properties.Resources.coding_challenges;
+            this.pictureBox3.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(188, 169);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // Form1
             // 
@@ -299,7 +307,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox houselearningtopbox;
-        private System.Windows.Forms.Button gamesbtn;
+        private System.Windows.Forms.Button safebrowserbtn;
         private System.Windows.Forms.Button codingbtn;
         private System.Windows.Forms.Button sciencebtn;
         private System.Windows.Forms.Button mathbtn;

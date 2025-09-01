@@ -2,7 +2,6 @@
 
 **HouseLearning** is a rad Windows Forms application built in C#. Designed for learning, it’s a slick, interactive tool to help users level up—whether they’re prepping for school, brushing up on coding, or just killing time productively.
 
-<img src="https://raw.githubusercontent.com/houselearning/houselearning-app/refs/heads/master/.github/readme-preview.png?token=GHSAT0AAAAAADGTESUO33TPZHBK6O6NQXVY2FJCTPQ">
 
 ---
 

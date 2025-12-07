@@ -24,7 +24,10 @@ namespace houselearning_app
 
         private void safebrowserbtn_Click(object sender, EventArgs e)
         {
+            SafeBrowser safeBrowser = new SafeBrowser(); // Create an instance of Form2
+            safeBrowser.Show(); // Show Form2
 
+            this.Hide(); // Hide Form1 (you can also use this.Close() if you want to close it completely)
         }
 
         private void homebtn_Click(object sender, EventArgs e)

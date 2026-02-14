@@ -24,5 +24,10 @@ namespace houselearning_app
 
             this.Hide(); // Hide Form1 (you can also use this.Close() if you want to close it completely)
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            safebrowserindex.Navigate(searchindex.Text);
+        }
     }
 }

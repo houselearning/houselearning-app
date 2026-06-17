@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SafeBrowser));
             this.backbtnsafebrowser = new System.Windows.Forms.Button();
             this.searchindex = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.safebrowserindex = new System.Windows.Forms.WebBrowser();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.settingsbtnSafeBrowser = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,6 +96,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.settingsbtnSafeBrowser);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button3);
@@ -118,6 +121,17 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // settingsbtnSafeBrowser
+            // 
+            this.settingsbtnSafeBrowser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsbtnSafeBrowser.Location = new System.Drawing.Point(968, 49);
+            this.settingsbtnSafeBrowser.Name = "settingsbtnSafeBrowser";
+            this.settingsbtnSafeBrowser.Size = new System.Drawing.Size(75, 23);
+            this.settingsbtnSafeBrowser.TabIndex = 6;
+            this.settingsbtnSafeBrowser.Text = "Settings";
+            this.settingsbtnSafeBrowser.UseVisualStyleBackColor = true;
+            this.settingsbtnSafeBrowser.Click += new System.EventHandler(this.button5_Click);
+            // 
             // SafeBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,6 +139,7 @@
             this.ClientSize = new System.Drawing.Size(1136, 602);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.safebrowserindex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SafeBrowser";
             this.Text = "HouseLearning | SafeBrowser";
             this.groupBox1.ResumeLayout(false);
@@ -143,5 +158,6 @@
         private System.Windows.Forms.WebBrowser safebrowserindex;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button settingsbtnSafeBrowser;
     }
 }

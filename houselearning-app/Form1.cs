@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace houselearning_app
 {
-    public partial class Form1 : Form
+    public partial class mainscreen : Form
     {
-        public Form1()
+        public mainscreen()
         {
             InitializeComponent();
         }

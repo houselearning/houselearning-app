@@ -15,11 +15,12 @@ namespace houselearning_app
         public SafeBrowser()
         {
             InitializeComponent();
+            safebrowserindex.ScriptErrorsSuppressed = true;
         }
 
         private void backbtnsafebrowser_Click(object sender, EventArgs e)
         {
-            Form1 houselearning = new Form1(); // Create an instance of Form2
+            mainscreen houselearning = new mainscreen(); // Create an instance of Form2
             houselearning.Show(); // Show Form2
 
             this.Hide(); // Hide Form1 (you can also use this.Close() if you want to close it completely)
@@ -28,6 +29,12 @@ namespace houselearning_app
         private void button4_Click(object sender, EventArgs e)
         {
             safebrowserindex.Navigate(searchindex.Text);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //SETTINGS SAFEBROWSER
+
         }
     }
 }

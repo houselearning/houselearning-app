@@ -1,6 +1,6 @@
 ﻿namespace houselearning_app
 {
-    partial class Form1
+    partial class mainscreen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainscreen));
             this.houselearningtopbox = new System.Windows.Forms.GroupBox();
             this.safebrowserbtn = new System.Windows.Forms.Button();
             this.codingbtn = new System.Windows.Forms.Button();
@@ -74,6 +74,7 @@
             // 
             // safebrowserbtn
             // 
+            this.safebrowserbtn.Enabled = false;
             this.safebrowserbtn.Location = new System.Drawing.Point(570, 22);
             this.safebrowserbtn.Name = "safebrowserbtn";
             this.safebrowserbtn.Size = new System.Drawing.Size(115, 23);
@@ -276,7 +277,7 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // Form1
+            // mainscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -289,7 +290,7 @@
             this.Controls.Add(this.houselearningtopbox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "mainscreen";
             this.Text = "HouseLearning";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.houselearningtopbox.ResumeLayout(false);

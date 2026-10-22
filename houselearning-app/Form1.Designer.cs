@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainscreen));
             this.houselearningtopbox = new System.Windows.Forms.GroupBox();
             this.safebrowserbtn = new System.Windows.Forms.Button();
+            this.lessonCliBtn = new System.Windows.Forms.Button();
             this.codingbtn = new System.Windows.Forms.Button();
             this.sciencebtn = new System.Windows.Forms.Button();
             this.mathbtn = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             // houselearningtopbox
             // 
             this.houselearningtopbox.Controls.Add(this.safebrowserbtn);
+            this.houselearningtopbox.Controls.Add(this.lessonCliBtn);
             this.houselearningtopbox.Controls.Add(this.codingbtn);
             this.houselearningtopbox.Controls.Add(this.sciencebtn);
             this.houselearningtopbox.Controls.Add(this.mathbtn);
@@ -82,7 +84,17 @@
             this.safebrowserbtn.Text = "SafeBrowser";
             this.safebrowserbtn.UseVisualStyleBackColor = true;
             this.safebrowserbtn.Click += new System.EventHandler(this.safebrowserbtn_Click);
-            // 
+            //
+            // lessonCliBtn
+            //
+            this.lessonCliBtn.Location = new System.Drawing.Point(685, 22);
+            this.lessonCliBtn.Name = "lessonCliBtn";
+            this.lessonCliBtn.Size = new System.Drawing.Size(110, 23);
+            this.lessonCliBtn.TabIndex = 5;
+            this.lessonCliBtn.Text = "Lesson CLI";
+            this.lessonCliBtn.UseVisualStyleBackColor = true;
+            this.lessonCliBtn.Click += new System.EventHandler(this.lessonCliBtn_Click);
+            //
             // codingbtn
             // 
             this.codingbtn.Location = new System.Drawing.Point(455, 22);
@@ -311,6 +323,7 @@
 
         private System.Windows.Forms.GroupBox houselearningtopbox;
         private System.Windows.Forms.Button safebrowserbtn;
+        private System.Windows.Forms.Button lessonCliBtn;
         private System.Windows.Forms.Button codingbtn;
         private System.Windows.Forms.Button sciencebtn;
         private System.Windows.Forms.Button mathbtn;
